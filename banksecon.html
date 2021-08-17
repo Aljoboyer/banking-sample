@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Page</title>
+      <!-- tailwind css link -->
+      <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-gray-400">
+    <header>
+        <h1 class="text-5xl font-bold text-center mt-16">Lets Get <span class="text-6xl font-extrabold text-red-800">Money---!</span></h1>
+    </header>
+    <main class="w-3/4 mx-auto">
+         <!-- Balance and transection -->
+    <section class="mt-12">
+        <div class="grid grid-cols-3 gap-4">
+            <div class="bg-blue-500 p-8 rounded ">
+                <h3 class="text-xl text-white fond-semibold">Deposit</h3>
+                <h4 class="text-3xl text-white fond-semibold">$<span id="dopsitbalance" >00</span></h4>
+            </div>
+            <div class="bg-yellow-400 p-8 rounded w-3/4 mx-auto">
+                <h3 class="text-xl text-white fond-semibold">withDraw</h3>
+                <h4 class="text-3xl text-white fond-semibold">$<span id="withdrawbalance">00</span></h4>
+            </div>
+            <div class="bg-green-500 p-8 rounded w-3/4 mx-auto">
+                <h3 class="text-xl text-white fond-semibold">Balance</h3>
+                <h4 class="text-3xl text-white fond-semibold">$<span id="totalbalance">00</span></h4>
+            </div>
+        </div>
+    </section>
+    <!-- deposit and withDraw section -->
+    <section class="mt-16">
+        <div class="grid grid-cols-2 gap-4">
+            <div class="bg-indigo-500 rounded text-center">
+                <h3 class="
+                text-2xl fond-semibold mt-2 text-white">Please Deposit</h3>
+                <input id="depositamount" class="mx-auto w-2/4 block border-2 border-gray-400 rounded mt-4" type="text" placeholder="$ amount you want to deposit">
+
+                <button id="depositbutton" class="bg-blue-600 rounded py-1 px-3 text-xl fond-semibold mt-4 mb-4 text-white" disabled>Deposit</button>
+            </div>
+            <div class="bg-purple-500 rounded text-center">
+                <h3 class="
+                text-2xl fond-semibold mt-2 text-white">Please withDraw</h3>
+                <input id="withDrawamount" class="mx-auto w-2/4 block border-2 border-gray-400 rounded mt-4" type="text" placeholder="$ amount you want to withDraw">
+
+                <button id="withDrawbutton" class="bg-blue-600 rounded py-1 px-3 text-xl fond-semibold mt-4 mb-4 text-white">WithDraw</button>
+            </div>
+        </div>
+    </section>
+    </main>
+
+    <script src="banking.js"></script>
+</body>
+</html>
